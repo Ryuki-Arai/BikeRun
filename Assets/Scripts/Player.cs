@@ -16,9 +16,9 @@ public class Player : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        if (Input.GetButtonDown("Jump")/*Input.GetMouseButtonDown(0)*/)
+        if (Input.GetMouseButtonDown(0))
         {
             if(_count > 0)
             {
