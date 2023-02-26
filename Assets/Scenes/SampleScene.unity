@@ -123,6 +123,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &504261212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3071201190636713076, guid: 3b56e45487d525e468b1e0de620214f0, type: 3}
+  m_PrefabInstance: {fileID: 1395407480}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &504261217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504261212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2f9c5754d952b428fa5c2b97e4dd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1489103193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -488,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _jumpPower: 8
-  _jumpMaxCount: 5
+  _jumpMaxCount: 3
 --- !u!136 &1489103199
 CapsuleCollider:
   m_ObjectHideFlags: 0
