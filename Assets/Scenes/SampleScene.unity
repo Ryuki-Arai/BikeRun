@@ -332,6 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ground: {fileID: 288631389873528030, guid: 7e98b1480a575c34cbb0bd7d437398b1, type: 3}
   _currentPos: {x: 0, y: 0, z: 0}
+  _instabilityY: 5
   _generatInterval: 1
   _holeProbability: 0
 --- !u!4 &1315431136
