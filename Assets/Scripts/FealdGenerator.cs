@@ -6,6 +6,7 @@ public class FealdGenerator : MonoBehaviour
 {
     [SerializeField] GameObject _ground;
     [SerializeField] Vector3 _currentPos;
+    [SerializeField] int _instabilityY;
     [SerializeField] int _generatInterval;
     [SerializeField] int _holeProbability;
 
@@ -21,10 +22,10 @@ public class FealdGenerator : MonoBehaviour
 
     IEnumerator FealdGenerate()
     {
-        do
+        while (true)
         {
-            Instantiate(_ground,_currentPos,Quaternion.identity);
+            Instantiate(_ground,new Vector3(_currentPos.x,_currentPos.y + Random.Range(-_instabilityY,_instabilityY),_currentPos.z),Quaternion.identity);
             yield return new WaitForSeconds(_generatInterval);
-        }while(true);
+        }
     }
 }
