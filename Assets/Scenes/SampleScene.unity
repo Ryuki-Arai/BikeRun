@@ -330,11 +330,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87743a6d4dc34f84a88b2a540d74f9f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ground: {fileID: 288631389873528030, guid: 7e98b1480a575c34cbb0bd7d437398b1, type: 3}
-  _currentPos: {x: 0, y: 0, z: 0}
-  _instabilityY: 5
-  _generatInterval: 1
-  _holeProbability: 0
+  fieldParts: {fileID: 288631389873528030, guid: 7e98b1480a575c34cbb0bd7d437398b1, type: 3}
+  fieldParent: {fileID: 1315431136}
+  fieldSizeZ: 50
+  fieldHeight: 20
+  xOrigin: 0
+  yOrigin: 0
+  scale: 0.05
 --- !u!4 &1315431136
 Transform:
   m_ObjectHideFlags: 0
