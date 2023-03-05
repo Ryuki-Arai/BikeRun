@@ -9,7 +9,7 @@ public class FieldGenerator : MonoBehaviour
     [SerializeField,Tooltip("親オブジェクト")] Transform fieldParent;
 
     [Header("フィールドに関する情報")]
-    float fieldX = 1f;
+    [SerializeField] int fieldX = 0;
     [SerializeField] int fieldHeight = 20;
     [SerializeField,Tooltip("シーン上に出現させる最大数")] int maxFieldSpawn;
 
