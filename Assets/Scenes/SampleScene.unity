@@ -333,7 +333,7 @@ MonoBehaviour:
   fieldParts: {fileID: 288631389873528030, guid: 7e98b1480a575c34cbb0bd7d437398b1, type: 3}
   fieldParent: {fileID: 1315431136}
   fieldHeight: 20
-  maxFieldSpawn: 10
+  maxFieldSpawn: 500
   xOrigin: 0
   zOrigin: 0
   noizeScale: 0.05
@@ -388,7 +388,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!136 &1489103194
 CapsuleCollider:

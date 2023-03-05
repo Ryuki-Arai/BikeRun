@@ -9,7 +9,7 @@ public class FieldGenerator : MonoBehaviour
     [SerializeField,Tooltip("親オブジェクト")] Transform fieldParent;
 
     [Header("フィールドに関する情報")]
-    const float FIELD_X = 1f;
+    float fieldX = 1f;
     [SerializeField] int fieldHeight = 20;
     [SerializeField,Tooltip("シーン上に出現させる最大数")] int maxFieldSpawn;
 
@@ -25,19 +25,19 @@ public class FieldGenerator : MonoBehaviour
 
     IEnumerator GenerateFieldParts()
     {
-        int fieldZ = 0;
+        float fieldZ = 0;
         while (fieldParent.childCount <= maxFieldSpawn)
         {
             // パーリンノイズの座標を指定して値を取得します。
-            var xValue = xOrigin + FIELD_X * noizeScale;
+            var xValue = xOrigin + fieldX * noizeScale;
             var zValue = zOrigin + fieldZ * noizeScale;
             var perlinValue = Mathf.PerlinNoise(xValue, zValue);
             var height = fieldHeight * perlinValue;
 
             // 位置のVector3を作成してオブジェクトをインスタンス化します。
-            var pos = new Vector3(FIELD_X, height, fieldZ);
+            var pos = new Vector3(fieldX, height, fieldZ);
             InstantiateFieldParts(pos);
-            fieldZ++;
+            fieldZ += fieldParts.transform.localScale.z;
             yield return null;
         }
     }
