@@ -29,7 +29,7 @@ public class FieldGenerator : MonoBehaviour
         while (fieldParent.childCount <= maxFieldSpawn || maxFieldSpawn <= 0)
         {
             // パーリンノイズの座標を指定して値を取得します。
-            var xValue = xOrigin /*+ fieldX*/ * noizeScale;
+            var xValue = xOrigin * noizeScale;
             var zValue = zOrigin + fieldZ * noizeScale;
             var perlinValue = Mathf.PerlinNoise(xValue, zValue);
             var height = fieldHeight * perlinValue;

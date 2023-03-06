@@ -186,7 +186,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153120153}
   m_LocalRotation: {x: 0.04256497, y: -0.563852, z: 0.029117301, w: 0.82426417}
-  m_LocalPosition: {x: 18, y: 13, z: -7}
+  m_LocalPosition: {x: 18, y: 7, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -366,7 +366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.04256497, y: -0.563852, z: 0.029117301, w: 0.82426417}
-  m_LocalPosition: {x: 18, y: 13, z: -7}
+  m_LocalPosition: {x: 18, y: 7, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -439,7 +439,7 @@ MonoBehaviour:
   fieldPrefab: {fileID: 288631389873528030, guid: 7e98b1480a575c34cbb0bd7d437398b1, type: 3}
   fieldParent: {fileID: 1315431136}
   fieldX: 0
-  fieldHeight: 15
+  fieldHeight: 10
   maxFieldSpawn: 0
   xOrigin: 0
   zOrigin: 0
@@ -474,6 +474,7 @@ GameObject:
   - component: {fileID: 1489103194}
   - component: {fileID: 1489103199}
   - component: {fileID: 1489103193}
+  - component: {fileID: 1489103200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -495,7 +496,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 114
   m_CollisionDetection: 0
 --- !u!136 &1489103194
 CapsuleCollider:
@@ -569,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489103192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 11, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -604,6 +605,19 @@ CapsuleCollider:
   m_Height: 0
   m_Direction: 1
   m_Center: {x: 0, y: -1, z: 0}
+--- !u!114 &1489103200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489103192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d2f9c5754d952b428fa5c2b97e4dd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 10
 --- !u!1 &1905277190
 GameObject:
   m_ObjectHideFlags: 3
